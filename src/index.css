@@ -37,3 +37,31 @@ hr {
   background: black;
   border: none;
 }
+
+a {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+h4 {
+  width: 10%;
+  background: wheat;
+  border: 1px solid magenta;
+  margin-left: 45%;
+}
+button {
+  width: 35px;
+  height: 35px;
+  border: 1px solid magenta;
+  border-radius: 50%;
+  cursor: pointer;
+  background: black;
+  font-size: 25px;
+  transition: 0.5s;
+  color: wheat;
+}
+
+button:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}

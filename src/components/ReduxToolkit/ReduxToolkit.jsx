@@ -12,7 +12,7 @@ function ReduxToolkit() {
     <div className="App">
       <h1> Redux Toolkit </h1>
       <input type="text" onChange={handleInput} />
-      <p className="paragraph">{value}</p>
+      <p>{value}</p>
     </div>
   );
 }
