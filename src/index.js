@@ -1,18 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import { Provider } from "react-redux";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-
-import { Provider } from "react-redux";
+import Redux from "./components/Redux/Redux";
 import { store } from "./redux/store";
+import ReduxToolkit from "./components/ReduxToolkit/ReduxToolkit";
+import { storeTk } from "./redux-toolkit/storeTk";
+import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>
+    <App />
     <Provider store={store}>
-    {/* <Provider store={storeTk}> */}
-      <App />
-    {/* </Provider> */}
+      <Redux />
+    </Provider>
+    <Provider store={storeTk}>
+      <ReduxToolkit />
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")
