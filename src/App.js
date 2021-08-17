@@ -3,6 +3,7 @@ import "./App.css";
 
 function App() {
   const [value, setValue] = useState();
+  const [count, setCount] = useState(0);
 
   const handleInput = (event) => {
     setValue(event.target.value);
@@ -25,6 +26,11 @@ function App() {
       <h1> With a normal React </h1>
       <input type="text" onChange={handleInput} />
       <p>{value}</p>
+      <div>
+        <h4>{count}</h4>
+        <button onClick={() => setCount(count + 1)}>+</button>
+        <button onClick={() => setCount(count - 1)}>-</button>
+      </div>
       <hr />
     </div>
   );
